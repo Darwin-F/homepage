@@ -1,7 +1,83 @@
-h1 {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1e272e;
+    color:antiquewhite;
+}
+.header {
     text-align: center;
 }
-body {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(126,126,233,1) 35%, rgba(0,212,255,1) 100%);
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section div {
+    width: 350px;
+    height: 250px;
+    position:relative;
+}
+
+section .haut {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(125px);
+    background-color: #1e272e;
+    z-index: 1;
+    transition: 1s;
+}
+
+section:hover .haut {
+    transform: translateY(0);
+    background-color: rgba(29,161,242,0.5);
+}
+
+section:hover .haut i{
+    transform: translateY(0);
+    color: #d2dae2;
+}
+
+
+section .haut i {
+    font-size: 120px;
+    color: rgba(29,161,242,0.5);
+}
+section .bas {
+    text-align: center;
+    background-color: #d2dae2;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-125px);
+    transition: 1s;
+}
+
+section:hover .bas {
+    transform: translateY(0);
+}
+section .bas button {
+    padding: 6px 25px;
+    background: none;
+    border: 2px solid #ff3f34;
+    border-radius: 50px;
+    cursor: pointer;
+    transition : 0.5s;
+}
+
+section .bas button a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #ff3f34;
+    
+}
+
+section .bas button:hover {
+    background: #ff3f34;
+    border: 2px solid #d2dae2;
+}
+
+section .bas button:hover a {
+    color: white;
 }
