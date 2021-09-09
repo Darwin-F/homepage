@@ -82,8 +82,11 @@ section .bas button:hover a {
     color: white;
 }
 
-@media screen and (maxwidth:800px) {
+@media screen and (max-width:800px) {
     .content {
-        display: inline-block;
+        display: block;
+    }
+    section div {
+        margin: auto;
     }
 }
